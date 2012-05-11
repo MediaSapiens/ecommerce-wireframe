@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="span4 offset4 well">
+            <div class="centerText">
+                <h1>Complicate your data</h1>
+                <div class="alert alert-info">
+                    some fields are only visible if no user data was found.
+                </div>
+                <form class="" action="profile">
+
+                    <input type="text" class="input-xlarge" placeholder="Username"/>
+                    <input type="text" class="input-xlarge" placeholder="Email address"/>
+                    <input type="text" class="input-xlarge" placeholder="Password"/>
+                    <div class="showPwd">
+                        <input type="checkbox" /> Show password
+                    </div>
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="span4 offset4 well">
+            <div class="centerText">
+            <h1>Login or signup</h1>
+            <p>
+
+                <a class="btn btn-primary" href="afterlogin"><i class="icon-facebook-sign"></i> Facebook</a>
+                <a class="btn btn-primary" href="afterlogin"><i class="icon-twitter-sign"></i> Twitter</a>
+                <a class="btn btn-primary" href="afterlogin"><i class="icon-signin"></i> Google</a>
+            </p>
+            <h2>or signup to our invite list</h2>
+
+            <p>
+            <form class="form-inline" action="afterlogin">
+                <input type="text" class="input-xlarge" placeholder="Your email address">
+                <button type="submit" class="btn">Sign in</button>
+            </form>
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

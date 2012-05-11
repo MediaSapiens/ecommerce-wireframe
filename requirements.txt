@@ -1,0 +1,5 @@
+flask
+#pil
+#numpy
+#pypng
+#-e git+git@github.com:MediaSapiens/flask-lesscss.git#egg=flask-lesscss
