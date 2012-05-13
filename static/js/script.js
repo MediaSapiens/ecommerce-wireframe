@@ -6,11 +6,11 @@ jQuery(function($) {
        if(!$(this).hasClass('active'))
        {
            $(this).addClass('active');
-           $('.login_data').fadeIn();
+           $('.login__section').fadeIn();
        }
         else {
            $(this).removeClass('active');
-           $('.login_data').fadeOut();
+           $('.login__section').fadeOut();
        }
     });
 });

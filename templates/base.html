@@ -41,14 +41,20 @@
 {% include "inc/signup_header.html" %}
 
 <div class="container">
-<header>
-    <nav class="nav login_block">
-        <a href="#">Category</a>
-        <a href="#">Blog</a>
-        <a href="#">About shop</a>
-        <a href="#">Contact us</a>
-        <a href="#" class="login">Login<i class="icon-signin"></i></a>
+<header class="row">
+
+    <nav class="span6 nav__left">
+        <a href="#">EN</a>
+        <a href="#">STORES</a>
+        <a href="#">HOTLINE</a>
+        <a href="#">SEARCH</a>
     </nav>
+
+    <nav class="span6 nav__right txt__right">
+        <a href="#" class="login">Login</a>
+        <a href="#">Shopping bag </a><i class="badge">0</i>
+    </nav>
+
 </header>
 {% endblock%}
 
