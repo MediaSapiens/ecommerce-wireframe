@@ -12,6 +12,8 @@
     <link href="static/bootstrap/less/bootstrap.less" rel="stylesheet/less">
     <link href="static/bootstrap/less/responsive.less" rel="stylesheet/less">
 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
     <!-- custom less -->
     <link href="static/fonts/awesome/less/font-awesome.less" rel="stylesheet/less">
     <link href="static/less/style.less" rel="stylesheet/less">
@@ -35,41 +37,8 @@
 
 <body>
 {% block header%}
-    <div class="login_data">
-        <div class="container">
-            <form class="form-horizontal">
-                <fieldset>
-                    <legend>Login <br><span>Sie sind bereits Kunde?</span></legend>
-                    <div class="control-group">
-                        <label class="control-label" for="input01">E-Mail-Adresse <span class="red_star">*</span></label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="input01">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="input02">Passwort <span class="red_star">*</span></label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="input02">
-                            <p class="help-block"><label class="checkbox inline">
-                                <input type="checkbox" id="inlineCheckbox1" value="option1">Angemeldet bleiben
-                            </label></p>
-                        </div>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Anmelde</button>
-                        <a class="fogoten">Passwort vergessen?</a>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="registration">
-                <h3>REGISTER A NEW ACCOUN</h3>
 
-                <p>By creating an account with our store, you will be able to move through the checkout process faster,
-                    store multiple shipping addresses, view and track your orders in your account and more.</p>
-                <button class="btn  btn-success">Open account</button>
-            </div>
-        </div>
-    </div>
+{% include "inc/signup_header.html" %}
 
 <div class="container">
 <header>
