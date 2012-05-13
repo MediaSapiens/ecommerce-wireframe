@@ -1,0 +1,10 @@
+*.sublime-*
+*.swp
+*~
+.DS_Store
+*.py[co]
+.webassets-cache
+#flamaster/conf/*.py
+.codeintel
+.idea/*
+*.db
