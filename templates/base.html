@@ -39,6 +39,8 @@
 {% block header%}
 
 {% include "inc/signup_header.html" %}
+{% include "inc/search_header.html" %}
+{% include "inc/hotline_header.html" %}
 
 <div class="container">
 <header class="row">
@@ -46,12 +48,12 @@
     <nav class="span6 nav__left">
         <a href="#">EN</a>
         <a href="#">STORES</a>
-        <a href="#">HOTLINE</a>
-        <a href="#">SEARCH</a>
+        <a href="#" class="showSection" data-layer="hotline__section">HOTLINE</a>
+        <a href="#" class="showSection" data-layer="search__section">SEARCH</a>
     </nav>
 
     <nav class="span6 nav__right txt__right">
-        <a href="#" class="login">Login</a>
+        <a href="#" class="showSection" data-layer="login__section">Login</a>
         <a href="#">Shopping bag </a><i class="badge">0</i>
     </nav>
 
