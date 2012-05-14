@@ -55,48 +55,117 @@
         <a href="#" class="showSection" data-layer="login__section">Login</a>
         <a href="#">Shopping bag </a><i class="badge">0</i>
     </nav>
-
+    <div class="span12 logo">
+        <img src="static/img/logo.png" alt="">
+    </div>
+    <ul class="span12 logo ">
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Ohtersection</a></li>
+        <li><a href="#">Othersection</a></li>
+    </ul>
 </header>
 {% endblock%}
 
 
-     <div class="data_block">
-    {% block content%}
 
-    {% endblock%}
-     </div>
+    {#{% block content%}#}
+           <section class="row">
+               <div class="span12 nav">
+                <div id="myCarousel" class="carousel">
+                   <!-- Carousel items -->
+                   <div class="carousel-inner">
+                       <div class="active item">
+                           <img src="static/img/gift.jpg" alt="">
+                           <div class="carousel-caption">
+                               <h4>Second Thumbnail label</h4>
+                               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                           </div>
+                       </div>
+                       <div class="item"><img src="static/img/gift.jpg" alt="">
+                           <div class="carousel-caption">
+                               <h4>Second Thumbnail label</h4>
+                               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                           </div>
+                       </div>
+                       <div class="item">
+                           <img src="static/img/gift.jpg" alt="">
+                           <div class="carousel-caption">
+                               <h4>Second Thumbnail label</h4>
+                               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- Carousel nav -->
+                   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+               </div>
+               </div>
+               <div class="span4 nav">
+                   <form class="well">
+                       <fieldset>
+                       <legend>Subscribe</legend>
+
+                       <label>First Name<span class="red_star">*</span></label>
+                       <input type="text" class="span3" placeholder="Type something…">
+                       <label>eMail<span class="red_star">*</span></label>
+                       <input type="text" class="span3" placeholder="Type something…">
+                       <button type="submit" class="btn btn-info">Submit</button>
+                       </fieldset>
+                   </form>
+               </div>
+               <div class="span4 nav">
+                   <h3>Last News</h3>
+                   <dl>
+                       <dt>First news</dt>
+                       <dd>A description list is perfect for defining terms.</dd>
+                       <dt>Second news</dt>
+                       <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                       <dt>More news</dt>
+                       <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                   </dl>
+                   <a href="#">all news</a>
+               </div>
+               <div class="span4 nav">
+                   <form class="well">
+                       <fieldset>
+                           <legend>Vip Club</legend>
+                           <label>First Name<span class="red_star">*</span></label>
+                           <input type="text" class="span3" placeholder="Type something…">
+                           <label>eMail<span class="red_star">*</span></label>
+                           <input type="text" class="span3" placeholder="Type something…">
+                           <button type="submit" class="btn btn-info">Submit</button>
+                       </fieldset>
+                   </form>
+               </div>
+           </section>
+    {#{% endblock%}#}
+
 
         {% block footer%}
-    <footer>
-               <div class="best_sell">
-                   <div class="grid4">
-                       <figure>
-                           <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt=""></a>
-                           <a href="#"><figcaption>Best Product of the week<br> nice <strogn>description</strogn></figcaption></a>
-                       </figure>
+    <footer class="row nav">
+        <div class="span12 nav bg_silder">
+                   <div class="span2">
+                    <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt="">Best Product of the week<br> nice <strogn>description</strogn></a>
                    </div>
-                   <div class="grid4">
-                       <figure>
-                           <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt=""></a>
-                           <a href="#"><figcaption>Best Product of the week<br> nice <strogn>description</strogn></figcaption></a>
-                       </figure>
+                   <div class="span2">
+                    <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt="">Best Product of the week<br> nice <strogn>description</strogn></a>
                    </div>
-                   <div class="grid4">
-                       <figure>
-                           <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt=""></a>
-                           <a href="#"><figcaption>Best Product of the week<br> nice <strogn>description</strogn></figcaption></a>
-                       </figure>
+                   <div class="span3">
+                    <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt="">Best Product of the week<br> nice <strogn>description</strogn></a>
                    </div>
-                   <div class="grid4">
-                       <figure>
-                           <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt=""></a>
-                           <a href="#"><figcaption>Best Product of the week<br> nice <strogn>description</strogn></figcaption></a>
-                       </figure>
+                   <div class="span2">
+                    <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt="">Best Product of the week<br> nice <strogn>description</strogn></a>
                    </div>
+                   <div class="span2">
+                    <a href="#"><img src="http://placehold.it/60x60/f9f9f9" alt="">Best Product of the week<br> nice <strogn>description</strogn></a>
+                   </div>
+
                </div>
-        <div class="footer_info">
-            <ul class="unstyled">
-                <li><a href="#" class="header">Company Info</a></li>
+        <div class="span12 nav">
+            <ul class="unstyled span3">
+                <li><h3>Company Info</h3></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Advertising</a></li>
                 <li><a href="#">Awards</a></li>
@@ -104,8 +173,8 @@
                 <li><a href="#">Become an Affiliate</a></li>
                 <li><a href="#">Careers</a></li>
             </ul>
-            <ul class="unstyled">
-                <li><a href="#" class="header">Customer Service</a></li>
+            <ul class="unstyled span3">
+                <li><h3>Customer Service</h3></li>
                 <li><a href="#">Help Center</a></li>
                 <li><a href="#">Order Status</a></li>
                 <li><a href="#">Return a Product</a></li>
@@ -113,40 +182,53 @@
                 <li><a href="#">Forgot Password?</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            <ul class="unstyled">
-                <li><a href="#" class="header">About</a></li>
+            <ul class="unstyled span2">
+                <li><h3>About</h3></li>
                 <li><a href="#">Affiliate program</a></li>
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Store locations</a></li>
             </ul>
-            <ul class="unstyled">
-                <li><a href="#" class="header">Subscribe</a></li>
+            <ul class="unstyled span3">
+                <li><h3>Subscribe</h3></li>
                 <li><a href="#">Always be aware of</a></li>
                 <li>
                     <form class=" form-inline">
-                        <input type="text" class="input-medium" placeholder="Email">
-                        <button type="submit" class="btn"><i class="icon-envelope"></i></button>
+                        <br>
+                        <div class="input-prepend">
+                            <span class="add-on icon-envelope"></span><input class="span2" id="prependedInput" size="16" type="text" placeholder="eMail">
+                        </div>
                     </form>
                 </li>
             </ul>
-            <ul class="unstyled">
-                <li><a href="#" class="header">Nearest provider</a></li>
+            <ul class="unstyled span2">
+                <li><h3>Nearest provider</h3></li>
                 <li><a href="#">Best way to buy</a></li>
                 <li>
                     <form class=" form-inline">
-                        <input type="text" class="input-medium" placeholder="Email">
-                        <button type="submit" class="btn"><i class="icon-exclamation-sign"></i></button>
+                        <br>
+                        <div class="input-prepend">
+                            <span class="add-on icon-exclamation-sign"></span><input class="input-small" id="prependedInput" size="16" type="text" placeholder="Hamburg">
+                        </div>
                     </form>
                 </li>
             </ul>
         </div>
-        <div class="payment_logo">
-            <img src="static/img/visa_logo.jpg" alt="">
-            <img src="static/img/paypal_logo.png" alt="">
-            <img src="static/img/master_card.gif" alt="">
+        <div class="span12 nav">
+            <span class="span2">
+             <img src="static/img/visa_logo.jpg" alt="" height="30">
+            </span>
+            <span class="span2">
+              <img src="static/img/paypal_logo.png" alt="" height="30">
+            </span>
+            <span class="span2">
+            <img src="static/img/master_card.gif" alt="" height="30">
+            </span>
+
+
+
         </div>
-        <div class="seo_block">
+        <div class="span12 nav">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<strong> Lorem Ipsum</strong> has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                 and scrambled it to make a type specimen book. <strong>It has survived</strong> not only five centuries, but also
@@ -154,13 +236,12 @@
                 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like <strong>Aldus PageMaker</strong> including versions of Lorem Ipsum.</p>
         </div>
-        <div class="corporate">
-            &copy; Corporate <b>MediaSapiens</b> 2011 - 2012
-          <div class="agb">
-                  <a href="#">AGB</a> <span class="divider">|</span>
+        <div class="span12 nav ">
+            <span class="span5 txt__left">&copy; Corporate <b>MediaSapiens</b> 2011 - 2012</span>
+            <span class="span6 txt__right">
+                <a href="#">AGB</a> <span class="divider">|</span>
                   <a href="#">Impressum</a> <span class="divider">|</span>
-                  <a href="#">Data</a>
-          </div>
+                  <a href="#">Data</a></span>
         </div>
     </footer>
         {% endblock%}

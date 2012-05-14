@@ -11,7 +11,33 @@ header{
         a{display: inline-block;margin-right: 10px;padding: 10px 0;}
         .badge{font-style: normal;}
     }
+    .logo{
+        text-align: center;
+        margin-top: 30px;
+    }
+    ul.logo{
+        list-style: none;
+            li{
+                display: inline-block;
+                padding: 7px 25px 9px 25px;
+                position: relative;
+                text-transform: uppercase;
+                cursor:pointer;
+                    a{text-transform: uppercase;color: #333;}
+                    .span4{
+                        display: none;
+                        position: absolute;
+                        top:30px;
+                        left: 0px;
+                        border: 1px solid #ccc;
+                    }
+                    &.active{z-index: 200;  border:1px solid #ccc;
+                        border-bottom-color: #fff;
+                        padding: 6px 24px 9px 24px;}
+            }
+    }
 }
+
 .hide__section{
     padding-top: 20px;
     display:none;
@@ -30,10 +56,6 @@ header{
         margin: 40px 0 10px 0;
     }
     .form-horizontal{
-        span.red_star{
-          font-size: 1.4em;
-          color: #D14;
-        }
         a.fogoten{
           font-size: 0.9em;
           margin-left: 20px;
@@ -61,42 +83,21 @@ header{
     do refactor, use bootstrap grid
 
 */
-
+span.red_star{
+    font-size: 1.4em;
+    color: #D14;
+}
 .data_block{
     min-height: 500px;
 }
-footer{
-    width: 100%;
-    margin-top:20px;
-    padding-bottom: 20px;
-        .best_sell{float: left;width: 100%;padding: 10px;text-align:center; background: #dfdee1;margin:10px 0;
-                    .grid4{width: 280px;display: inline-block;margin-right:10px;text-align:left;
-                                figure{margin: 0;padding: 0;float: left;}
-                                a{float:left;color: #212121;margin-left: 10px;line-height: 1.6;font-size: 1.2em;
-
-                                    strgong{font-weight: 600;}
-                                    }
-                            }
-                    .grid4:last-child{margin: 0;}
+.bg_silder {
+    background: #f5f5f5;
+    padding:10px 0;
+        img{
+            float: left;
+            padding-right: 10px;
         }
-    .footer_info{float: left;width: 100%;
-                ul.unstyled{
-                    float: left;
-                    width: 220px;
-                        a{color: #5e5e5e;line-height: 1.4;
-                            &.header{font-weight: 700;font-size: 1.3em;margin-bottom:5px;display: block;}
-                            }
-                        input[type=text]{margin: 10px 0; }
-                        button[type=submit]{margin-left: -8px;}
-                }
-        }
-    .payment_logo{float: left;margin: 20px 0;
-            img{float: left;margin-right: 30px;height: 50px;}
-        }
-    .seo_block{float: left;width: 100%;margin-bottom: 10px;border-top:1px solid #f6f6f6;padding-top: 10px;}
-    .corporate{float: left;width: 100%;margin-bottom: 30px;
-            .agb{float: right;
-                   a{padding: 0 10px;}
-                }
-        }
+}
+.hiddens{
+    display: none;
 }

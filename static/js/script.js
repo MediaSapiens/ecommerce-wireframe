@@ -14,6 +14,15 @@ jQuery(function ($) {
             $(_section).slideUp('fast');
         }
     });
+    $('.carousel').carousel()
+    /*$('ul.logo li ').hover(
+        function () {
+             $(this).addClass('active').children('ul').show();
+        },
+        function () {
+            $(this).removeClass('active').children('ul').hide();
+        }
+     );*/
 });
 
 
