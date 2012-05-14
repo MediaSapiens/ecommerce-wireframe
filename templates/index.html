@@ -1,48 +1,52 @@
 {% extends "base.html" %}
 
 {% block content%}
-<section class="row">
-    <div class="span12 nav">
-        <div id="myCarousel" class="carousel">
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item">
-                    <div class="demoBox  size1170x480">
-                    <i class="icon-gift fontSize300"></i>
-                    <div class="carousel-caption">
-                        <h4>Second Thumbnail label</h4>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="demoBox  size1170x480">
-                        <i class="icon-plane fontSize300"></i>
-                        <div class="carousel-caption">
-                            <h4>Second Thumbnail label</h4>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="demoBox  size1170x480">
-                        <i class="icon-fire fontSize300"></i>
-                        <div class="carousel-caption">
-                            <h4>Second Thumbnail label</h4>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        </div>
-                    </div>
+<section id="myCarousel" class="carousel">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item">
+            <div class="demoBox  size1170x480">
+            <i class="icon-gift fontSize300"></i>
+            <div class="carousel-caption">
+                <h4>Second Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="demoBox  size1170x480">
+                <i class="icon-plane fontSize300"></i>
+                <div class="carousel-caption">
+                    <h4>Second Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
             </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+        <div class="item">
+            <div class="demoBox  size1170x480">
+                <i class="icon-fire fontSize300"></i>
+                <div class="carousel-caption">
+                    <h4>Second Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</section>
+
+<section class="hero-unit">
+        <h1>Hello, world!</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p><a class="btn btn-primary btn-large">Learn more</a></p>
+</section>
+<section class="row">
     <div class="span4 nav">
         <form class="well">
             <fieldset>
-                <legend>Subscribe</legend>
+                <legend>Newsletter</legend>
 
                 <label>First Name<span class="red_star">*</span></label>
                 <input type="text" class="span3" placeholder="Type something…">
@@ -77,6 +81,7 @@
         </form>
     </div>
 </section>
+
  <div class="row">
      <div class="span12">
         <div id="myCarousels" class="carousel carousel_slider">
@@ -104,4 +109,5 @@
      </div>
      </div>
 </div>
+
 {% endblock %}
