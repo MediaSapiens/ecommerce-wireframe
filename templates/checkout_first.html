@@ -1,24 +1,25 @@
 {% extends "base.html" %}
 
 {% block content%}
-
-<section class="row check__account">
+<div class="container">
+<section class="row check__account login__section">
     <div class="span6">
         <form class="form-horizontal">
             <fieldset>
-                <legend>LOG IN</legend>
+                <legend>I am alredy customer</legend>
+                <p>Please login using your eMail address or customer number and your password.</p>
                 <div class="control-group">
                     <label class="control-label" for="input01">eMail <span class="red_star">*</span></label>
 
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="input01">
+                        <input type="text" class="input-medium" id="input01">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="input02">Password <span class="red_star">*</span></label>
 
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="input02">
+                        <input type="text" class="input-medium" id="input02">
                     </div>
                 </div>
                 <div class="form-actions">
@@ -34,13 +35,23 @@
 
             <p>By creating an account with our store, you will be able to move through the checkout process faster,
                 store multiple shipping addresses, view and track your orders in your account and more.</p>
-            <button class="btn  btn-success">Open account</button>
-        </div>
-
-        <div class="secureLogo">
-            <i class="icon-lock icon"></i> Our shop is trust and 100% secure
+            <a href="open_account" class="btn  btn-success">Open account</a>
         </div>
     </div>
 </section>
+
+<section class="row login__section login__without">
+    <div class="span6 secureLogo">
+        <i class="icon-lock icon"></i> Our shop is trust and 100% secure
+    </div>
+    <div class="span6">
+        <h2>Purchase without Registration</h2>
+        <p>
+            I do not want to create a customer account.
+        </p>
+        <a href="without_account" class="btn  btn-success">Continue</a>
+    </div>
+</section>
+</div>
 
 {% endblock %}
