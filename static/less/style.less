@@ -1,3 +1,7 @@
+@import "../bootstrap/less/bootstrap.less";
+@import "../bootstrap/less/responsive.less";
+@import "../fonts/awesome/less/font-awesome.less";
+
 body{font-family: 'Open Sans', helvetica, arial, sans-serif;}
 .gRight{float: right;}
 .txt__right{text-align: right;}
@@ -105,7 +109,7 @@ span.red_star{
 }
 //Item Size block
 .fontSize300{
-    font-size: 300px;
+    font-size: 20em;
 }
 .fontSize50{
     font-size: 50px
@@ -124,6 +128,15 @@ span.red_star{
     text-align: center;
 }
 //Fix css
-.products{
-    margin-left: 20px;
+.product{
+    margin: 0 0 10px 20px;
+    .image{
+        height:280px;
+        margin:10px 0 0;
+        .text-overflow();
+    }
+    border: 1px solid #ccc;
+    .border-radius();
+
+    .caption{margin:0 10px}
 }
