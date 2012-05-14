@@ -8,3 +8,4 @@
 .codeintel
 .idea/*
 *.db
+pages.py
