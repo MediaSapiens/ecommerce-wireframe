@@ -24,6 +24,9 @@ jQuery(function ($) {
             $(this).removeClass('active').children('ul').hide();
         }
      );*/
+    $('.cart_prod .btn-danger').click(function(){
+        $(this).parents('.cart_prod ').fadeOut('900');
+    })
 });
 
 
