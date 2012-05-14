@@ -3,7 +3,44 @@
 {% block content%}
 
 <section class="row check__account">
+    <div class="span6">
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>LOG IN</legend>
+                <div class="control-group">
+                    <label class="control-label" for="input01">eMail <span class="red_star">*</span></label>
 
+                    <div class="controls">
+                        <input type="text" class="input-xlarge" id="input01">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="input02">Password <span class="red_star">*</span></label>
+
+                    <div class="controls">
+                        <input type="text" class="input-xlarge" id="input02">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                    <a class="fogoten">Forgot password?</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="span6">
+        <div class="registration">
+            <h2>REGISTER A NEW ACCOUN</h2>
+
+            <p>By creating an account with our store, you will be able to move through the checkout process faster,
+                store multiple shipping addresses, view and track your orders in your account and more.</p>
+            <button class="btn  btn-success">Open account</button>
+        </div>
+
+        <div class="secureLogo">
+            <i class="icon-lock icon"></i> Our shop is trust and 100% secure
+        </div>
+    </div>
 </section>
 
 {% endblock %}
