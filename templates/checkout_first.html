@@ -1,57 +1,69 @@
 {% extends "base.html" %}
 
 {% block content%}
+
+<ul class="breadcrumb">
+    <li>
+        <a href="#">Home</a> <span class="divider">/</span>
+    </li>
+    <li>
+        <a href="#">Library</a> <span class="divider">/</span>
+    </li>
+    <li class="active">Data</li>
+</ul>
+
 <div class="container">
-<section class="row check__account login__section">
-    <div class="span6">
-        <form class="form-horizontal">
-            <fieldset>
-                <legend>I am alredy customer</legend>
-                <p>Please login using your eMail address or customer number and your password.</p>
-                <div class="control-group">
-                    <label class="control-label" for="input01">eMail <span class="red_star">*</span></label>
+    <section class="row login__section">
+        <div class="span6">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>I am alredy customer</legend>
+                    <p>Please login using your eMail address or customer number and your password.</p>
 
-                    <div class="controls">
-                        <input type="text" class="input-medium" id="input01">
+                    <div class="control-group">
+                        <label class="control-label" for="input01">eMail <span class="red_star">*</span></label>
+
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="input01">
+                        </div>
                     </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="input02">Password <span class="red_star">*</span></label>
+                    <div class="control-group">
+                        <label class="control-label" for="input02">Password <span class="red_star">*</span></label>
 
-                    <div class="controls">
-                        <input type="text" class="input-medium" id="input02">
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="input02">
+                        </div>
                     </div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Log in</button>
-                    <a class="fogoten">Forgot password?</a>
-                </div>
-            </fieldset>
-        </form>
-    </div>
-    <div class="span6">
-        <div class="registration">
-            <h2>REGISTER A NEW ACCOUN</h2>
-
-            <p>By creating an account with our store, you will be able to move through the checkout process faster,
-                store multiple shipping addresses, view and track your orders in your account and more.</p>
-            <a href="open_account" class="btn  btn-success">Open account</a>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                        <a class="fogoten">Forgot password?</a>
+                    </div>
+                </fieldset>
+            </form>
         </div>
-    </div>
-</section>
+        <div class="span6">
+            <fieldset>
+                <legend>Register a new account</legend>
+                <p>By creating an account with our store, you will be able to move through the checkout process faster,
+                    store multiple shipping addresses, view and track your orders in your account and more.</p>
+                <a href="open_account" class="btn  btn-success">Open account</a>
+            </fieldset>
+        </div>
+    </section>
 
-<section class="row login__section login__without">
-    <div class="span6 secureLogo">
-        <i class="icon-lock icon"></i> Our shop is trust and 100% secure
-    </div>
-    <div class="span6">
-        <h2>Purchase without Registration</h2>
-        <p>
-            I do not want to create a customer account.
-        </p>
-        <a href="without_account" class="btn  btn-success">Continue</a>
-    </div>
-</section>
+    <section class="row login__section login__without">
+        <div class="span6 secureLogo">
+            <i class="icon-lock icon"></i> Our shop is trust and 100% secure
+        </div>
+        <div class="span6">
+            <h2>Purchase without Registration</h2>
+
+            <p>
+                I do not want to create a customer account.
+            </p>
+            <a href="without_account" class="btn  btn-success">Continue</a>
+        </div>
+    </section>
 </div>
 
 {% endblock %}
