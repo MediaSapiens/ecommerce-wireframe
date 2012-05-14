@@ -77,4 +77,31 @@
         </form>
     </div>
 </section>
+ <div class="row">
+     <div class="span12">
+        <div id="myCarousels" class="carousel carousel_slider">
+         <!-- Carousel items -->
+         <div class="carousel-inner">
+             <div class="active item">
+                 {% include "inc/slider_item.html" %}
+                 {% include "inc/slider_item.html" %}
+                 {% include "inc/slider_item.html" %}
+             </div>
+             <div class="item">
+                 {% include "inc/slider_item.html" %}
+                 {% include "inc/slider_item.html" %}
+                 {% include "inc/slider_item.html" %}
+             </div>
+             <div class="item">
+                 {% include "inc/slider_item.html" %}
+                 {% include "inc/slider_item.html" %}
+                 {% include "inc/slider_item.html" %}
+             </div>
+         </div>
+         <!-- Carousel nav -->
+         <a class="carousel-control left" href="#myCarousels" data-slide="prev">&lsaquo;</a>
+         <a class="carousel-control right" href="#myCarousels" data-slide="next">&rsaquo;</a>
+     </div>
+     </div>
+</div>
 {% endblock %}

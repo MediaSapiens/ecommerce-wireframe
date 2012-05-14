@@ -14,7 +14,8 @@ jQuery(function ($) {
             $(_section).slideUp('fast');
         }
     });
-    $('.carousel').carousel()
+    $('.carousel').carousel();
+    $('.carousel_slider').carousel();
     /*$('ul.logo li ').hover(
         function () {
              $(this).addClass('active').children('ul').show();
