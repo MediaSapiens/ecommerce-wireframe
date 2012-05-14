@@ -1,5 +1,73 @@
 {% extends "base.html" %}
 
 {% block content%}
+<section class="row">
+    <div class="span12 nav">
+        <div id="myCarousel" class="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="static/img/gift.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+                <div class="item"><img src="static/img/gift.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="static/img/gift.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+    </div>
+    <div class="span4 nav">
+        <form class="well">
+            <fieldset>
+                <legend>Subscribe</legend>
 
+                <label>First Name<span class="red_star">*</span></label>
+                <input type="text" class="span3" placeholder="Type something…">
+                <label>eMail<span class="red_star">*</span></label>
+                <input type="text" class="span3" placeholder="Type something…">
+                <button type="submit" class="btn btn-info">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="span4 nav">
+        <h3>Last News</h3>
+        <dl>
+            <dt>First news</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Second news</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dt>More news</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+        </dl>
+        <a href="#">all news</a>
+    </div>
+    <div class="span4 nav">
+        <form class="well">
+            <fieldset>
+                <legend>Vip Club</legend>
+                <label>First Name<span class="red_star">*</span></label>
+                <input type="text" class="span3" placeholder="Type something…">
+                <label>eMail<span class="red_star">*</span></label>
+                <input type="text" class="span3" placeholder="Type something…">
+                <button type="submit" class="btn btn-info">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</section>
 {% endblock %}
