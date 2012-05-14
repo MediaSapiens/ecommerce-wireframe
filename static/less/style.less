@@ -153,18 +153,49 @@ span.red_star{
     margin: 0 11px 0 65px;
     border: 1px solid @grayLighter;
     padding: 10px;
+    line-height: 1;
     .border-radius();
 
     &:hover{
         .box-shadow();
     }
 }
+.pop_item{
+    margin:20px 40px 0 0;
+    border: 1px solid @grayLighter;
+    padding: 10px;
+    line-height: 1;
+    .border-radius();
 
-
-
-
+    &:hover{
+        .box-shadow();
+    }
+}
 footer{
     border-top:1px solid @grayLighter;
     padding:10px 0;
     margin:10px 0 0;
+}
+.box_pro{
+     list-style:none;
+    margin-left: -30px;
+    text-align:center;
+    li{
+        border: 1px solid @grayLighter;
+        padding:10px 0;
+        .border-radius();
+        margin-bottom: 15px;
+        height: 50px;
+        &.big_prod{
+            height: 240px;
+            padding-top: 30px;
+        }
+    }
+}
+h3 span{
+    color: @orange;
+}
+.prod_info dd,
+.prod_info dt{
+    padding: 5px 0;
 }
